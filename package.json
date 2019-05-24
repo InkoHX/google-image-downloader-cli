@@ -9,5 +9,8 @@
   "dependencies": {
     "cheerio-httpcli": "^0.7.4",
     "commander": "^2.20.0"
+  },
+  "bin": {
+    "google-image-downloader": "./index.js"
   }
 }
