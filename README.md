@@ -1,3 +1,17 @@
 # google-image-downloader-cli
 
-cheerio-httpcliを使った画像ダウンロードがやりたかった
+## Install
+
+```bash
+npm install google-image-downloader-cli -g
+```
+
+## Usage
+
+```bash
+google-image-downloader -q <keyword>
+```
+
+## Video
+
+[YouTube](https://youtu.be/9kImZbHJFxM)
