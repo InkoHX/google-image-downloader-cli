@@ -12,5 +12,9 @@
   },
   "bin": {
     "google-image-downloader": "./index.js"
-  }
+  },
+  "keywords": [
+    "image",
+    "downloader"
+  ]
 }
