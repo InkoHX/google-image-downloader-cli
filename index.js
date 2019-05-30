@@ -28,7 +28,7 @@ if (commander.query) {
 }
 
 function getQuery() {
-  url = `http://www.google.co.jp/search?q=${encodeURIComponent(keyword)}&tbm=isch&ijn=${encodeURIComponent(page)}&tbs=ift:png`
+  url = `http://www.google.com/search?q=${encodeURIComponent(keyword)}&tbm=isch&ijn=${encodeURIComponent(page)}&tbs=ift:png`
   page++
 
   return url
