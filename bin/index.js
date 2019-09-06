@@ -9,8 +9,8 @@ program
   .version('v2.0.0')
   .arguments('<keyword>')
   .description('download images.')
-  .option('-p --parallel <number>', 'parallel count (1~5)')
-  .option('--safe', 'safeSearch')
+  .option('-p --parallel <number>', 'parallel count (1~5)', 5)
+  .option('--safe', 'safeSearch', false)
   .option('-s --size <large|medium|icon>', 'image size.')
   .action((keyword, options) => {
     gidl({
