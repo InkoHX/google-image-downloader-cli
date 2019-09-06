@@ -65,7 +65,3 @@ or
 
 gidl <keyword> --safe
 ```
-
-## Video
-
-[v1.0.0](https://youtu.be/9kImZbHJFxM)
