@@ -68,4 +68,4 @@ gidl <keyword> --safe
 
 ## Video
 
-[YouTube](https://youtu.be/9kImZbHJFxM)
+[v1.0.0](https://youtu.be/9kImZbHJFxM)
