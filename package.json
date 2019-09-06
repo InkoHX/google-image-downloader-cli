@@ -11,10 +11,23 @@
     "commander": "^2.20.0"
   },
   "bin": {
-    "google-image-downloader": "./index.js"
+    "google-image-downloader": "./bin/index.js",
+    "gidl": "./bin/index.js"
+  },
+  "scripts": {
+    "prepublishOnly": "tsc -p .",
+    "test": "tsc -p . --noEmit"
   },
   "keywords": [
     "image",
     "downloader"
-  ]
+  ],
+  "devDependencies": {
+    "@types/node": "^12.7.3",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.3.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
 }
