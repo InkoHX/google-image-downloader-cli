@@ -11,8 +11,8 @@
     "commander": "^2.20.0"
   },
   "bin": {
-    "google-image-downloader": "./bin/index.js",
-    "gidl": "./bin/index.js"
+    "google-image-downloader": "./dist/cli.js",
+    "gidl": "./dist/cli.js"
   },
   "scripts": {
     "prepublishOnly": "tsc -p .",
