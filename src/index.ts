@@ -9,16 +9,18 @@ interface DownloadOptions {
   parallel?: number
   safeSearch?: boolean
   size?: ImageSize
+  path?: string
 }
 
 Client.set('followMetaRefresh', false)
 
-const dir = path.join(process.cwd(), 'images')
-let count = 0
-let page = 1
+let dir: string = path.join(process.cwd(), 'images')
+let count: number = 0
+let page: number = 1
 
 export default function downloadImages(options: DownloadOptions) {
   Client.download.parallel = options.parallel || 5
+  if (options.path) dir = options.path
   if (!existsSync(dir)) mkdirSync(dir)
   const url = `http://www.google.com/search?q=${encodeURIComponent(options.keyword)}&ijn=${encodeURIComponent(page)}&tbm=isch${ParameterBuilder(options) !== null ? `&${ParameterBuilder(options)}` : ''}`
   Client.fetch(url)

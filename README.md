@@ -20,10 +20,12 @@ yarn global add google-image-downloader-cli
 
 ```bash
 google-image-downloader <keyword>
+google-image-downloader <keyword> [dir]
 
 or
 
 gidl <keyword>
+gidl <keyword> [dir]
 ```
 
 ### Size option
