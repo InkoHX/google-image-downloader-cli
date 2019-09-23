@@ -14,7 +14,7 @@ interface DownloadOptions {
 
 Client.set('followMetaRefresh', false)
 
-let dir: string = path.join(process.cwd(), 'images')
+let dir: string = path.join(process.cwd(), Date.now().toString())
 let count: number = 0
 let page: number = 1
 
@@ -26,12 +26,11 @@ export default function downloadImages(options: DownloadOptions) {
   Client.fetch(url)
     .then((result) => {
       result.$("img[class='rg_ic rg_i']").download()
-      downloadImages(options)
       page++
+      downloadImages(options)
     })
-    .catch(() => {
-      console.info('process exit.')
-      process.exit(1)
+    .catch((error) => {
+      if (error.message !== 'no content') console.error(error)
     })
 }
 
