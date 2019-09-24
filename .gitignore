@@ -61,7 +61,7 @@ typings/
 .next
 
 # Images
-images/
+*.png
 
 # TypeScript
 dist/
