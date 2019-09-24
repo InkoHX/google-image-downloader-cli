@@ -4,7 +4,7 @@ import program from 'commander'
 import gidl from './index'
 
 program
-  .version('v2.0.0')
+  .version('v2.1.2')
   .arguments('<keyword> [dir]')
   .description('download images.')
   .option('-p --parallel <number>', 'parallel count (1~5)', 5)
